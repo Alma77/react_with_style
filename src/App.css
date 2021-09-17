@@ -1,5 +1,57 @@
 .App {
   text-align: center;
+  background-color: #282c34;
+}
+
+#App-background{
+  background-color: #373a42;
+  color: white;
+}
+
+.button-rt-align{
+  justify-content: right;
+  margin-left: 5em;
+}
+
+.App-button {
+  margin: auto;
+  width: 50%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.App-form{
+  width: 50%;
+  margin: auto;
+  text-align: left;
+  font-size: 18px;
+}
+
+.App-list{
+  background-color: #282c34;
+  color: white;
+  justify-content: center;
+  width: 50%;
+  margin: auto;
+}
+
+.App-list-item{
+
+}
+
+.App-list-item:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#App-background:hover{
+  background-color: rgb(24, 23, 23);
+}
+
+.App-list-group{
+  width: 50%;
+  margin: auto;
+  justify-content: center;
 }
 
 .App-logo {
@@ -12,10 +64,19 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+.App-main {
+  background-color: #282c34;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+  justify-content:center;
+  min-height: 100vh;
+  justify-content: center;
+}
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
