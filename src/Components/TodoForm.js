@@ -40,7 +40,7 @@ class TodoForm extends React.Component{
                     <label>Todo Item:</label>
                     <input
                         className="form-control"
-                        placeholder="ex: Played Basketball" 
+                        placeholder="ex: Exercise" 
                         type="text" 
                         value={this.state.todoItem}
                         onChange={event => this.handleItemChange(event)}
@@ -51,7 +51,7 @@ class TodoForm extends React.Component{
                     <input 
                         className="form-control"
                         type ="text"
-                        placeholder="example: 9:00am"
+                        placeholder="ex: 9:00am"
                         value={this.state.todoTime}
                         onChange={event => this.handleTimeChange(event)}
                     />
@@ -61,7 +61,7 @@ class TodoForm extends React.Component{
                     <input 
                         className="form-control"
                         type ="text"
-                        placeholder="Add description of todo Item" 
+                        placeholder="Add a description of your todo here..." 
                         value={this.state.todoDescription}
                         onChange={event => this.handleDescriptionChange(event)}   
                     />

@@ -42,11 +42,9 @@ class App extends React.Component {
       isFiltered: false,
       showDetail: false,
       showAddTodo: false,
-      detailView: {
-        todo: "",
-        time: "",
-        description: "",
-      },
+      todo: "",
+      time: "",
+      description: "",
     };
   }
 
@@ -72,15 +70,13 @@ class App extends React.Component {
   };
 
   setDetailView = value => {
-    this.setState(this.detailView = {
-        todo: value.todo,
-        time: value.time,
-        description: value.description
-      },
-      this.showDetail = true,
-    )
-    alert(`showDetail has value: ${this.showDetail} and detailView has current values: ${this.detailView.todo}, ${this.detailView.time}, and ${this.detailView.description}`)
-  };
+    this.setState({
+      todo: value.todo,
+      time: value.time,
+      description: value.description,
+      showDetail: true,
+    })
+  }
 
   resetFilter = () => {
     this.setState({isFiltered: false});
@@ -120,11 +116,10 @@ class App extends React.Component {
 
     if (this.state.showDetail) {
       detail = <div className="App-form">
-        <DetailView detailView={this.state.detailView}/>
-        <button className="App-button" onClick={this.HideDetail} className="btn btn-danger">Hide Detail</button>
+        <DetailView todoItem={this.state.todo} time={this.state.time} description={this.state.description} hideDetail={this.HideDetail}/>
       </div>
-
     }
+
     return (
       <div className="App">
         <header className="App-header">

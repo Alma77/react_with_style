@@ -13,7 +13,7 @@ const Todo = props => (
 const TodoList = props => (
     <ul className="list-group App-list">
         {props.todoList.map(todo =>(
-            <Todo todo={todo} deleteTodo={props.deleteTodo} setDetailView={props.setDetailView}
+            <Todo todo={todo} key={todo.todo} deleteTodo={props.deleteTodo} setDetailView={props.setDetailView}
             updateTodo={props.updateTodo}/>             
         )
         )}
